@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="" />
+    <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="khoi tao project">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +20,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,10 +47,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/backend/last-project" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Part1Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PartOneCollection.Part1Calculator" />
+      <module name="ttcFresher.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PartOneCollection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Part1Calculator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -58,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577937837188</updated>
-      <workItem from="1577937841041" duration="274000" />
+      <workItem from="1577937841041" duration="2498000" />
     </task>
     <servers />
   </component>
@@ -66,10 +103,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1577938208347">
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1577940367210">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1577938208347" />
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1577940367210" />
     <state x="182" y="109" width="1536" height="820" key="DiffContextDialog" timestamp="1577937980360">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -78,5 +115,21 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="693" y="223" width="524" height="594" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1577938065099" />
+    <state width="904" height="244" key="GridCell.Tab.0.bottom" timestamp="1577940086175">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="904" height="244" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1577940086175" />
+    <state width="904" height="244" key="GridCell.Tab.0.center" timestamp="1577940086174">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="904" height="244" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1577940086174" />
+    <state width="904" height="244" key="GridCell.Tab.0.left" timestamp="1577940086174">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="904" height="244" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1577940086174" />
+    <state width="904" height="244" key="GridCell.Tab.0.right" timestamp="1577940086174">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="904" height="244" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1577940086174" />
   </component>
 </project>
