@@ -61,13 +61,13 @@ public class Bill {
                 '}';
     }
     public static List<Bill> getList(){
-        Bill bill1 = new Bill(1, "a1", 9000, "2020-01-22");
+        Bill bill1 = new Bill(1, "a1", 1000000, "2020-01-22");
         Bill bill2 = new Bill(2, "a2", 20, "2020-01-22");
-        Bill bill3 = new Bill(3, "a3", 12, "2020-03-22");
-        Bill bill4 = new Bill(4, "a4", 1, "2020-05-22");
-        Bill bill5 = new Bill(5, "a5", 9, "2020-05-21");
+        Bill bill3 = new Bill(3, "a3", 120000000, "2020-03-22");
+        Bill bill4 = new Bill(4, "a4", 1333, "2020-05-22");
+        Bill bill5 = new Bill(5, "a5", 9555, "2020-05-21");
         Bill bill6 = new Bill(6, "a6", 70, "2020-02-22");
-        Bill bill7 = new Bill(7, "a7", 66, "2020-01-22");
+        Bill bill7 = new Bill(7, "a7", 9000000, "2020-01-22");
         Bill bill8 = new Bill(8, "a8", 1009, "2020-01-20");
         List<Bill> list = new ArrayList<>();
         list.add(bill1);

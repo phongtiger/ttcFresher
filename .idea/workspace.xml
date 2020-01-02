@@ -2,30 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="Success c1,c2,c3,c4">
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Bill.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C1Calculator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Part2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Sort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/SortList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/C2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/C3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/C4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Part1Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/Part1Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/C1Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/Part2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Bill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Sort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/C3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartOneCollection/C3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +59,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/backend/last-project" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.C4">
+  <component name="RunManager" selected="Application.C5">
     <configuration name="C1Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PartOneCollection.C1Calculator" />
       <module name="ttcFresher.main" />
@@ -109,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PartOneCollection.C5" />
+      <module name="ttcFresher.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PartOneCollection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PartOneCollection.Part2" />
       <module name="ttcFresher.main" />
@@ -124,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.C5" />
         <item itemvalue="Application.C4" />
         <item itemvalue="Application.C3" />
         <item itemvalue="Application.Part2" />
@@ -153,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577937837188</updated>
-      <workItem from="1577937841041" duration="11372000" />
+      <workItem from="1577937841041" duration="12654000" />
     </task>
     <task id="LOCAL-00001" summary="Success part1">
       <created>1577940411500</created>
@@ -167,6 +171,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Success part1" />
@@ -190,22 +205,22 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="693" y="223" width="524" height="594" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1577938065099" />
-    <state width="1864" height="287" key="GridCell.Tab.0.bottom" timestamp="1577954573473">
+    <state width="1864" height="287" key="GridCell.Tab.0.bottom" timestamp="1577955849285">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="287" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1577954573473" />
-    <state width="1864" height="287" key="GridCell.Tab.0.center" timestamp="1577954573470">
+    <state width="1864" height="287" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1577955849285" />
+    <state width="1864" height="287" key="GridCell.Tab.0.center" timestamp="1577955849284">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="287" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1577954573470" />
-    <state width="1864" height="287" key="GridCell.Tab.0.left" timestamp="1577954573470">
+    <state width="1864" height="287" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1577955849284" />
+    <state width="1864" height="287" key="GridCell.Tab.0.left" timestamp="1577955849284">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="287" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1577954573470" />
-    <state width="1864" height="287" key="GridCell.Tab.0.right" timestamp="1577954573471">
+    <state width="1864" height="287" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1577955849284" />
+    <state width="1864" height="287" key="GridCell.Tab.0.right" timestamp="1577955849284">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="287" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1577954573471" />
+    <state width="1864" height="287" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1577955849284" />
     <state width="1301" height="493" key="GridCell.Tab.1.bottom" timestamp="1577947552992">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -222,16 +237,5 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state width="1301" height="493" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1577947552991" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/PartOneCollection/C2.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
