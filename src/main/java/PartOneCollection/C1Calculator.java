@@ -2,7 +2,7 @@ package PartOneCollection;
 
 import java.util.Scanner;
 
-public class Part1Calculator {
+public class C1Calculator {
     public static void main(String[] args) {
         String inputN;
         Scanner scanner = new Scanner(System.in);
