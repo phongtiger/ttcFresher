@@ -1,4 +1,4 @@
-package PartOneCollection;
+package Part1Collection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,18 +65,18 @@ public class Bill {
         Bill bill2 = new Bill(2, "a2", 20, "2020-01-22");
         Bill bill3 = new Bill(3, "a3", 120000000, "2020-03-22");
         Bill bill4 = new Bill(4, "a4", 1333, "2020-05-22");
-        Bill bill5 = new Bill(5, "a5", 9555, "2020-05-22");
+        Bill bill5 = new Bill(3, "a3", 9555, "2020-05-22");
         Bill bill6 = new Bill(6, "a6", 70, "2020-02-22");
         Bill bill7 = new Bill(7, "a7", 9000000, "2020-01-22");
         Bill bill8 = new Bill(8, "a8", 1009, "2020-01-20");
         Bill bill9 = new Bill(9, "a1", 1000000, "2020-01-22");
-        Bill bill10 = new Bill(10, "a2", 20, "2020-01-22");
-        Bill bill11 = new Bill(11, "a3", 120000000, "2020-03-22");
+        Bill bill10 = new Bill(7, "a2", 20, "2020-01-22");
+        Bill bill11 = new Bill(11, "a6", 120000000, "2020-03-22");
         Bill bill12 = new Bill(12, "a4", 1333, "2020-05-22");
         Bill bill13 = new Bill(13, "a5", 9555, "2020-05-22");
-        Bill bill14 = new Bill(14, "a6", 70, "2020-02-22");
+        Bill bill14 = new Bill(11, "a6", 70, "2020-02-22");
         Bill bill15 = new Bill(15, "a7", 9000000, "2020-01-22");
-        Bill bill16 = new Bill(16, "a8", 1009, "2020-01-20");
+        Bill bill16 = new Bill(11, "a6", 1009, "2020-01-20");
         List<Bill> list = new ArrayList<>();
         list.add(bill1);
         list.add(bill2);
