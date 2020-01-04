@@ -1,4 +1,4 @@
-package Part2String;
+package ttcfresher;
 
 import java.util.*;
 

@@ -46,13 +46,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Part3">
     <configuration name="C1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Part2String.C1" />
       <module name="ttcFresher.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Part2String.*" />
+          <option name="PATTERN" value="ttcfresher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,7 +70,7 @@
       <module name="ttcFresher.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Part2String.*" />
+          <option name="PATTERN" value="ttcfresher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,18 +79,18 @@
       </method>
     </configuration>
     <configuration name="Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part1Collection.Part1" />
+      <option name="MAIN_CLASS_NAME" value="ttcfresher.Part1" />
       <module name="ttcFresher.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part2String.Part2" />
+      <option name="MAIN_CLASS_NAME" value="ttcfresher.Part2" />
       <module name="ttcFresher.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Part2String.*" />
+          <option name="PATTERN" value="ttcfresher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,11 +99,11 @@
       </method>
     </configuration>
     <configuration name="Part3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part3.Part3" />
+      <option name="MAIN_CLASS_NAME" value="ttcfresher.Part3" />
       <module name="ttcFresher.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Part3.*" />
+          <option name="PATTERN" value="ttcfresher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -255,10 +260,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="670" y="357" width="579" height="339" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.988@0.27.1920.988" timestamp="1578033136187" />
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578131286508">
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578131298162">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578131286508" />
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578131298162" />
     <state x="182" y="109" width="1536" height="820" key="DiffContextDialog" timestamp="1577937980360">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -299,10 +304,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state width="1864" height="444" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1578122964086" />
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578131045096">
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578131304645">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578131045096" />
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578131304645" />
     <state x="540" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1578112671335">
       <screen x="0" y="27" width="1920" height="988" />
     </state>

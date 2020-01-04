@@ -1,4 +1,4 @@
-package Part1Collection;
+package ttcfresher;
 
 import java.util.ArrayList;
 import java.util.List;
