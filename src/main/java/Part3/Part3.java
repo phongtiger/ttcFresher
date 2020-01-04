@@ -14,16 +14,20 @@ public class Part3 {
 
     public static void main(String[] args) throws ParseException {
         //Cau1
+        System.out.println("Cau 1");
         String s = "2012-03-11 14:20:01";
+        System.out.println("Input: " + s);
         try {
             Date resultC1 = changeC1(s);
-            System.out.println("Cau 1 ket qua: "+ resultC1);
+            System.out.println("Output: "+ resultC1);
         } catch (Exception e){
             System.out.println("C1 fail!!");
         }
 
         //Cau2
+        System.out.println(" ");
         System.out.println("Cau 2");
+        System.out.println("Input: " + s);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date date = sdf.parse(s);
         Calendar calendar = dateToCalendar(date);
@@ -31,7 +35,7 @@ public class Part3 {
         Date dateAfter100day = calendar.getTime();
         Date dateFirst = new Date();
         Date dateLast = dateAfter100day;
-        System.out.println(dateAfter100day);
+        System.out.println("100 day after: "+ dateAfter100day);
         int numberDateLast = calendar.getActualMaximum(Calendar.DATE);
         dateFirst.setDate(1);
         dateFirst.setMonth(dateLast.getMonth());
@@ -68,7 +72,11 @@ public class Part3 {
         SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd");
         Date date1 = sdf2.parse(a);
         Date date2 = sdf2.parse(b);
-        System.out.println("cau3");
+        System.out.println(" ");
+        System.out.println("Cau 3");
+        System.out.println("Day a: "+ a);
+        System.out.println("Day b: "+ b);
+        System.out.println("Output: ");
         if(date1.compareTo(date2) == 0){
             System.out.println("Hai ngay trung nhau");
         }else if (date1.compareTo(date2) > 0){
@@ -78,29 +86,43 @@ public class Part3 {
         }
 
         //Cau4
+        System.out.println(" ");
+        System.out.println("Cau 4");
+        System.out.println("Input: ");
+
         String dateStart = "2012-03-1";
         String dateStop = "2012-07-14";
+        System.out.println("DateStart: "+ dateStart);
+        System.out.println("DateStop: "+ dateStop);
+
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date d1 = null;
         Date d2 = null;
         try {
-
             d1 = format.parse(dateStart);
-
             d2 = format.parse(dateStop);
 
         } catch (ParseException e) {
             System.out.println("error format");
         }
+        assert d1 != null;
+        assert d2 != null;
         long getDiff = d2.getTime() - d1.getTime();
         long getDayDiff = TimeUnit.MILLISECONDS.toDays(getDiff);
 
-        System.out.println("Khoảng cách giữa 2 ngày nhập là  ~ " + (getDayDiff-getDayDiff/30*30) + " ngày , " + getDayDiff/30 +" tháng và " + getDayDiff/365+ " năm");
+        System.out.println("Khoảng cách giữa 2 ngày nhập là  ~ "
+                + (getDayDiff-getDayDiff/30*30)
+                + " ngày , "
+                + getDayDiff/30
+                +" tháng và "
+                + getDayDiff/365
+                + " năm");
 
         //Cau5
         String s3 = "2016/03/15 11:06:20";
+        System.out.println(" ");
         System.out.println("Cau 5");
-        System.out.println("Input");
+        System.out.println("Input: "+ s3);
         DateFormat dateFormat2 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date3 = dateFormat2.parse(s3);
         Timestamp timestamp = new Timestamp(date3.getTime());
@@ -111,6 +133,7 @@ public class Part3 {
         System.out.println(last);
 
         //Cau6
+        System.out.println(" ");
         DateFormat dateFormat6 = new SimpleDateFormat("yyyy/MM/dd HH:mm");
         try {
             Date date4 = dateFormat6.parse(s3);
@@ -123,6 +146,7 @@ public class Part3 {
             System.out.println("error");
         }
         //Cau7
+        System.out.println(" ");
         System.out.println("Cau 7");
         System.out.println("Input: "+ s3);
         SimpleDateFormat dateFormat7a = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -130,7 +154,7 @@ public class Part3 {
         String strDate1 = dateFormat7a.format(date3);
         System.out.println("Output1: "+ strDate1);
         String strDate2 = dateFormat7b.format(date3);
-        System.out.println("Output1: "+ strDate2);
+        System.out.println("Output2: "+ strDate2);
     }
     private static Calendar dateToCalendar(Date date) {
         Calendar calendar = Calendar.getInstance();
@@ -140,7 +164,6 @@ public class Part3 {
     public static Date changeC1(String date) throws ParseException {
         String shortDate = date.substring(0,10);
         String newShortDate = shortDate.replace("-","/");
-        Date date1 = new SimpleDateFormat("yyyy/MM/dd").parse(newShortDate);
-        return date1;
+        return new SimpleDateFormat("yyyy/MM/dd").parse(newShortDate);
     }
 }
