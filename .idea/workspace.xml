@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Part2String/Part2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Part2String/Part2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Part1Collection/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1Collection/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Part1Collection/BillService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Part1Collection/BillService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Part1Collection/Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Part1Collection/Part1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Part1Collection/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1Collection/Part1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Part2String/Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part2String/Part2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577937837188</updated>
       <workItem from="1577937841041" duration="58011000" />
-      <workItem from="1578112627533" duration="12312000" />
+      <workItem from="1578112627533" duration="13257000" />
     </task>
     <task id="LOCAL-00001" summary="Success part1">
       <created>1577940411500</created>
@@ -196,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578034436767</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="xong het part 3">
+      <created>1578127112516</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578127112516</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +222,8 @@
     <MESSAGE value="Success c6 -sửa 1 chút phần hiển thị" />
     <MESSAGE value="Success c7" />
     <MESSAGE value="sua lai chi chua 1 class xong c1 par2" />
-    <option name="LAST_COMMIT_MESSAGE" value="sua lai chi chua 1 class xong c1 par2" />
+    <MESSAGE value="xong het part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="xong het part 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1204" y="173" width="640" height="693" key="#com.intellij.ide.util.MemberChooser" timestamp="1577957826150">
@@ -236,10 +234,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="670" y="357" width="579" height="339" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.988@0.27.1920.988" timestamp="1578033136187" />
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578050369702">
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578127112246">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578050369702" />
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578127112246" />
     <state x="182" y="109" width="1536" height="820" key="DiffContextDialog" timestamp="1577937980360">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -280,10 +278,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state width="1864" height="444" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1578122964086" />
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578034439734">
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578127117406">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578034439734" />
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578127117406" />
     <state x="540" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1578112671335">
       <screen x="0" y="27" width="1920" height="988" />
     </state>

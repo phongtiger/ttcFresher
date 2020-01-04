@@ -3,28 +3,6 @@ package Part1Collection;
 import java.util.*;
 
 public class Part1 {
-    public static List<Bill> sortListByMoney(List<Bill> listBill){
-        listBill.sort(Comparator.comparingLong(Bill::getMoney));
-        return listBill;
-    }
-    public static void showList(List<Bill> listBill){
-        for (Bill bill : listBill) {
-            System.out.println(bill.toString() + " , ");
-        }
-    }
-    public static List<Bill> getListHaveMoneyMoreThan1000000(List<Bill> bills){
-        List<Bill> result = new ArrayList<>();
-        for(Bill bill: bills){
-            if(bill.getMoney() > 1000000){
-                result.add(bill);
-            }
-        }
-        return result;
-    }
-    public static List<Integer> sortList(List<Integer> a){
-            a.sort(Integer::compareTo);
-            return a;
-        }
     public static void main(String[] args) {
         //Cau 1
         String inputN;
@@ -89,23 +67,7 @@ public class Part1 {
         //Cau6 cau7
         System.out.println("Cau 6 va 7");
         List<Bill> listc6c7 = Bill.getList();
-        HashMap<String, List<Bill>> listBillHashMap = new HashMap<>();
-        List<String> dateList2 = new ArrayList<>();
-        for (Bill bill : listc6c7) {
-            dateList2.add(bill.getDate());
-        }
-        Set<String> setWithoutDuplicateElements2 = new TreeSet<>(dateList2);
-        List<String> listWithoutDuplicateElements2 = new ArrayList<>(setWithoutDuplicateElements2);
-        for (String element : listWithoutDuplicateElements2) {
-            listBillHashMap.put(element, new ArrayList<Bill>());
-        }
-        for(int i = 0; i< listc6c7.size();i++ ){
-            for(int j = 0; j < listBillHashMap.size();j+=8){
-                if (listBillHashMap.containsKey(listc6c7.get(i).getDate())) {
-                    listBillHashMap.get(listc6c7.get(i).getDate()).add(listc6c7.get(i));
-                }
-            }
-        }
+        HashMap<String, List<Bill>> listBillHashMap = getBillDistinctByDate(listc6c7);
         //ket qua cau 6
         Set<Map.Entry<String, List<Bill>>> setHashMap = listBillHashMap.entrySet();
         System.out.println("Day la key and value HashMap");
@@ -124,9 +86,55 @@ public class Part1 {
         //cau 8
         System.out.println("Cau 8");
         Set<Bill> billSet = new HashSet<>(Bill.getList());
-        for (Bill e: billSet
-             ) {
+        for (Bill e: billSet) {
             System.out.println(e);
         }
     }
+    public static List<String> getListByDate(List<Bill> bills){
+        List<String> dateList = new ArrayList<>();
+        for (Bill bill : bills) {
+            dateList.add(bill.getDate());
+        }
+        return dateList;
+    }
+    public static HashMap<String, List<Bill>> getBillDistinctByDate(List<Bill> bills){
+        HashMap<String, List<Bill>> listBillHashMap = new HashMap<>();
+        List<String> dateList2 = getListByDate(bills);
+        Set<String> setWithoutDuplicateElements2 = new TreeSet<>(dateList2);
+        List<String> listWithoutDuplicateElements2 = new ArrayList<>(setWithoutDuplicateElements2);
+        for (String element : listWithoutDuplicateElements2) {
+            listBillHashMap.put(element, new ArrayList<Bill>());
+        }
+        for(int i = 0; i< bills.size();i++ ){
+            for(int j = 0; j < listBillHashMap.size();j+=8){
+                if (listBillHashMap.containsKey(bills.get(i).getDate())) {
+                    listBillHashMap.get(bills.get(i).getDate()).add(bills.get(i));
+                }
+            }
+        }
+        return listBillHashMap;
+    }
+    public static List<Bill> sortListByMoney(List<Bill> listBill){
+        listBill.sort(Comparator.comparingLong(Bill::getMoney));
+        return listBill;
+    }
+    public static void showList(List<Bill> listBill){
+        for (Bill bill : listBill) {
+            System.out.println(bill.toString() + " , ");
+        }
+    }
+    public static List<Bill> getListHaveMoneyMoreThan1000000(List<Bill> bills){
+        List<Bill> result = new ArrayList<>();
+        for(Bill bill: bills){
+            if(bill.getMoney() > 1000000){
+                result.add(bill);
+            }
+        }
+        return result;
+    }
+    public static List<Integer> sortList(List<Integer> a){
+        a.sort(Integer::compareTo);
+        return a;
+    }
+
 }
