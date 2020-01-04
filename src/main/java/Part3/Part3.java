@@ -156,11 +156,13 @@ public class Part3 {
         String strDate2 = dateFormat7b.format(date3);
         System.out.println("Output2: "+ strDate2);
     }
+
     private static Calendar dateToCalendar(Date date) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         return calendar;
     }
+
     public static Date changeC1(String date) throws ParseException {
         String shortDate = date.substring(0,10);
         String newShortDate = shortDate.replace("-","/");
