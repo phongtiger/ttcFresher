@@ -4,28 +4,18 @@
     <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Bill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/BillService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C1Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/C5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/Part2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/PartOneCollection/SortList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1Collection/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1Collection/BillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/C1Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/C2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/C3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/C4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartOneCollection/C5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Part2String/Part2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Part2String/Part2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part1Collection/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1Collection/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part1Collection/BillService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part1Collection/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1Collection/Part1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part2String/Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part2String/Part2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +59,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/javaHienthicacloaihinh" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.Part2">
+  <component name="RunManager" selected="Application.Part1">
     <configuration name="C1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Part2String.C1" />
       <module name="ttcFresher.main" />
@@ -89,19 +79,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Part2String.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C6andC7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Part1Collection.C6andC7" />
-      <module name="ttcFresher.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Part1Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,13 +106,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part3.Part3" />
+      <module name="ttcFresher.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Part3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Part3" />
         <item itemvalue="Application.Part2" />
         <item itemvalue="Application.Part1" />
         <item itemvalue="Application.C2" />
         <item itemvalue="Application.C1" />
-        <item itemvalue="Application.C6andC7" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +151,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577937837188</updated>
-      <workItem from="1577937841041" duration="44262000" />
+      <workItem from="1577937841041" duration="58011000" />
+      <workItem from="1578112627533" duration="12312000" />
     </task>
     <task id="LOCAL-00001" summary="Success part1">
       <created>1577940411500</created>
@@ -198,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577985385564</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sua lai chi chua 1 class xong c1 par2">
+      <created>1578034436767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578034436767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +207,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -224,7 +224,8 @@
     <MESSAGE value="Success c6" />
     <MESSAGE value="Success c6 -sửa 1 chút phần hiển thị" />
     <MESSAGE value="Success c7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Success c7" />
+    <MESSAGE value="sua lai chi chua 1 class xong c1 par2" />
+    <option name="LAST_COMMIT_MESSAGE" value="sua lai chi chua 1 class xong c1 par2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1204" y="173" width="640" height="693" key="#com.intellij.ide.util.MemberChooser" timestamp="1577957826150">
@@ -235,10 +236,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="670" y="357" width="579" height="339" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.988@0.27.1920.988" timestamp="1578033136187" />
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1577985385365">
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578050369702">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1577985385365" />
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578050369702" />
     <state x="182" y="109" width="1536" height="820" key="DiffContextDialog" timestamp="1577937980360">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -247,42 +248,46 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="693" y="223" width="524" height="594" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1578030694470" />
-    <state width="1864" height="256" key="GridCell.Tab.0.bottom" timestamp="1578034332219">
+    <state width="1864" height="353" key="GridCell.Tab.0.bottom" timestamp="1578127039200">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="256" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1578034332219" />
-    <state width="1864" height="256" key="GridCell.Tab.0.center" timestamp="1578034332219">
+    <state width="1864" height="353" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1578127039200" />
+    <state width="1864" height="353" key="GridCell.Tab.0.center" timestamp="1578127039199">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="256" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1578034332219" />
-    <state width="1864" height="256" key="GridCell.Tab.0.left" timestamp="1578034332218">
+    <state width="1864" height="353" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1578127039199" />
+    <state width="1864" height="353" key="GridCell.Tab.0.left" timestamp="1578127039199">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="256" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1578034332218" />
-    <state width="1864" height="256" key="GridCell.Tab.0.right" timestamp="1578034332219">
+    <state width="1864" height="353" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1578127039199" />
+    <state width="1864" height="353" key="GridCell.Tab.0.right" timestamp="1578127039200">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="256" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1578034332219" />
-    <state width="1864" height="444" key="GridCell.Tab.1.bottom" timestamp="1578031576064">
+    <state width="1864" height="353" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1578127039200" />
+    <state width="1864" height="444" key="GridCell.Tab.1.bottom" timestamp="1578122964087">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="444" key="GridCell.Tab.1.bottom/0.27.1920.988@0.27.1920.988" timestamp="1578031576064" />
-    <state width="1864" height="444" key="GridCell.Tab.1.center" timestamp="1578031576063">
+    <state width="1864" height="444" key="GridCell.Tab.1.bottom/0.27.1920.988@0.27.1920.988" timestamp="1578122964087" />
+    <state width="1864" height="444" key="GridCell.Tab.1.center" timestamp="1578122964086">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="444" key="GridCell.Tab.1.center/0.27.1920.988@0.27.1920.988" timestamp="1578031576063" />
-    <state width="1864" height="444" key="GridCell.Tab.1.left" timestamp="1578031576063">
+    <state width="1864" height="444" key="GridCell.Tab.1.center/0.27.1920.988@0.27.1920.988" timestamp="1578122964086" />
+    <state width="1864" height="444" key="GridCell.Tab.1.left" timestamp="1578122964086">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="444" key="GridCell.Tab.1.left/0.27.1920.988@0.27.1920.988" timestamp="1578031576063" />
-    <state width="1864" height="444" key="GridCell.Tab.1.right" timestamp="1578031576063">
+    <state width="1864" height="444" key="GridCell.Tab.1.left/0.27.1920.988@0.27.1920.988" timestamp="1578122964086" />
+    <state width="1864" height="444" key="GridCell.Tab.1.right" timestamp="1578122964086">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="444" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1578031576063" />
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1577985387030">
+    <state width="1864" height="444" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1578122964086" />
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578034439734">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1577985387030" />
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578034439734" />
+    <state x="540" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1578112671335">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="540" y="309" key="com.intellij.ide.util.TipDialog/0.27.1920.988@0.27.1920.988" timestamp="1578112671335" />
     <state x="630" y="238" width="649" height="564" key="extract.method.dialog" timestamp="1578016547226">
       <screen x="0" y="27" width="1920" height="988" />
     </state>

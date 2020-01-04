@@ -3,9 +3,6 @@ package Part2String;
 import java.util.*;
 
 public class Part2 {
-    public static final char SPACE = ' ';
-    public static final char TAB = '\t';
-    public static final char BREAK_LINE = '\n';
     public static void main(String[] args){
         //Cau 1
         String s = "xin chiao the gioi xin the the moi";
@@ -42,12 +39,68 @@ public class Part2 {
                 arr.add(s1.substring(j,i));
             }
         }
-        Set<String> setInteger = new TreeSet<>(arr);
-        List<String> newSetList = new ArrayList<>(setInteger);
-        newSetList.remove(0);
-        System.out.println(newSetList);
-    }
+        Set<String> stringTreeSet = new TreeSet<>(arr);
+        List<String> stringArrayList = new ArrayList<>(stringTreeSet);
+        stringArrayList.remove(0);
+        System.out.println("Cac chuoi con: ");
+        System.out.println(stringArrayList);
+        List<Integer> countList = countStringList(stringArrayList,s1);
+        HashMap<String,Integer> stringIntegerHashMap = new HashMap<>();
+        for(int i = 0; i< stringArrayList.size();i++){
+            stringIntegerHashMap.put(stringArrayList.get(i),countList.get(i));
+        }
+        System.out.println("Dem so lan xuat hien cua chung: ");
+        System.out.println(stringIntegerHashMap);
 
+        //cau3
+        System.out.println("Cau 3");
+        StringBuilder sb = new StringBuilder();
+        List<String> listC3 = new ArrayList<>();
+        listC3.add("ass");
+        listC3.add("ass");
+        listC3.add("asass");
+        listC3.add("s1");
+        listC3.add("s1");
+        System.out.println("input:");
+        System.out.println(listC3);
+        for (String value : listC3) {
+            sb.append(value).append(",");
+
+        }
+        String outputC3 = sb.substring(0, sb.length() - 1);
+        System.out.println("output:");
+        System.out.println(outputC3);
+
+        //cau4
+        System.out.println("cau4");
+        System.out.println("input");
+        System.out.println(outputC3);
+        String[] arrC4 = outputC3.split(",");
+        List<String> listC4 = new ArrayList<>();
+        listC4.addAll(Arrays.asList(arrC4));
+        System.out.println("output");
+        System.out.println(listC4);
+
+
+        //cau5
+        System.out.println("cau5");
+        String raw = "i am a student am";
+        String from = "am";
+        String to = "is";
+        String result = replaceString(raw,from,to);
+        System.out.println(result);
+
+    }
+    public static List<Integer> countStringList(List<String> ls, String s){
+        List<Integer> countList = new ArrayList<>();
+        for (String l : ls) {
+            countList.add(getCountString(s, l));
+        }
+        return countList;
+    }
+    private static String replaceString(String raw, String from, String to){
+        return raw.replace(from, to);
+    }
     private static int getCountFirstChar(String s, char k) {
         char[] s2 = s.toCharArray();
         if(s2[0] == k){
@@ -91,49 +144,29 @@ public class Part2 {
 
     private static int getCountStringPositionN(String s, String search, int n){
         int count = 0;
-        if(n<=s.length()){
-            String newString = s.substring(0,n);
-            Map<String, Integer> wordMap = countWords(newString);
-            for (String key : wordMap.keySet()) {
-                if(key.equals(search)){
-                    count = wordMap.get(key);
+        try {
+            for(int i = 0; i<n-search.length()+1;i++){
+                if(search.equals(s.substring(i,(i+ search.length())))){
+                    count++;
                 }
             }
+        } catch ( Exception e){
+            System.out.println("out of bout");
         }
         return count;
     }
-
-    public static void addWord(Map<String, Integer> wordMap, StringBuilder sb) {
-        String word = sb.toString();
-        if (word.length() == 0) {
-            return;
-        }
-        if (wordMap.containsKey(word)) {
-            int count = wordMap.get(word) + 1;
-            wordMap.put(word, count);
-        } else {
-            wordMap.put(word, 1);
-        }
-    }
-
-    public static Map<String, Integer> countWords(String input) {
-        Map<String, Integer> wordMap = new TreeMap<String, Integer>();
-        if (input == null) {
-            return wordMap;
-        }
-        int size = input.length();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < size; i++) {
-            if (input.charAt(i) != SPACE && input.charAt(i) != TAB
-                    && input.charAt(i) != BREAK_LINE) {
-                sb.append(input.charAt(i));
-            } else {
-                addWord(wordMap, sb);
-                sb = new StringBuilder();
+    private static int getCountString(String s, String search){
+        int count = 0;
+        try {
+            for(int i = 0; i<(s.length()-search.length()+1);i++){
+                if(search.equals(s.substring(i,(i+ search.length())))){
+                    count++;
+                }
             }
+        } catch ( Exception e){
+            System.out.println("out of bout");
         }
-        addWord(wordMap, sb);
-        return wordMap;
+        return count;
     }
 
     public static int findId(String s){
@@ -153,6 +186,4 @@ public class Part2 {
         }
         return max;
     }
-
-
 }

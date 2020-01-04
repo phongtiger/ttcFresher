@@ -96,5 +96,23 @@ public class Bill {
         list.add(bill16);
         return list;
     }
+    @Override
 
+    public int hashCode(){
+
+        return id;
+
+    }
+    @Override
+
+    public boolean equals(Object obj){
+
+        if(obj instanceof Bill){
+
+            return ((Bill) obj).name.equals(this.name);
+
+        }
+
+        return false;
+    }
 }

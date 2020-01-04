@@ -42,6 +42,7 @@ public class Part1 {
         } catch (Exception e){
             System.out.println("N is not number");
         }
+
         //cau 2
         List<Integer> input = new ArrayList<>();
         for(int i = 0; i <= 50; i++){
@@ -64,37 +65,37 @@ public class Part1 {
         showList(newList);
 
         //Cau4
-        List<Bill> listc4 = Bill.getList();
+        List<Bill> listC4 = Bill.getList();
         System.out.println("Cau 4");
         System.out.println("Input");
-        System.out.println(listc4);
+        System.out.println(listC4);
         List<String> dateList = new ArrayList<>();
-        for (Bill bill : listc4) {
+        for (Bill bill : listC4) {
             dateList.add(bill.getDate());
         }
         Set<String> setWithoutDuplicateElements = new TreeSet<>(dateList);
         System.out.println("Out put");
-        System.out.println(setWithoutDuplicateElements);
+        for (String element: setWithoutDuplicateElements) {
+            System.out.println(element);
+        }
 
         //Cau5
+        System.out.println("Cau 5");
         List<Bill> listC5 = Bill.getList();
         List<Bill> listBillMoreThan1000000 = getListHaveMoneyMoreThan1000000(listC5);
-        System.out.println("output c5: ");
+        System.out.println("Output More Than 1000000: ");
         showList(listBillMoreThan1000000);
 
         //Cau6 cau7
+        System.out.println("Cau 6 va 7");
         List<Bill> listc6c7 = Bill.getList();
         HashMap<String, List<Bill>> listBillHashMap = new HashMap<>();
         List<String> dateList2 = new ArrayList<>();
         for (Bill bill : listc6c7) {
             dateList2.add(bill.getDate());
         }
-        List<String> listWithoutDuplicateElements2 = new ArrayList<String>();
-        for (String element : dateList2) {
-            if (!listWithoutDuplicateElements2.contains(element)) {
-                listWithoutDuplicateElements2.add(element);
-            }
-        }
+        Set<String> setWithoutDuplicateElements2 = new TreeSet<>(dateList2);
+        List<String> listWithoutDuplicateElements2 = new ArrayList<>(setWithoutDuplicateElements2);
         for (String element : listWithoutDuplicateElements2) {
             listBillHashMap.put(element, new ArrayList<Bill>());
         }
@@ -108,14 +109,24 @@ public class Part1 {
         //ket qua cau 6
         Set<Map.Entry<String, List<Bill>>> setHashMap = listBillHashMap.entrySet();
         System.out.println("Day la key and value HashMap");
-        System.out.println(setHashMap);
-        //cau 7
-        List<List<Bill>> listListBill = new ArrayList<>();
-        for (List<Bill> value : listBillHashMap.values()) {
-            listListBill.add(value);
+        for (Map.Entry<String, List<Bill>> element: setHashMap) {
+            System.out.println(element);
         }
-        System.out.println("Day la List<List<Bill>>");
-        System.out.println(listListBill);
+        System.out.println(setHashMap);
 
+        //cau 7
+        List<List<Bill>> listListBill = new ArrayList<>(listBillHashMap.values());
+        System.out.println("Day la List<List<Bill>>");
+        for (List<Bill> element : listListBill) {
+            System.out.println(element);
+        }
+
+        //cau 8
+        System.out.println("Cau 8");
+        Set<Bill> billSet = new HashSet<>(Bill.getList());
+        for (Bill e: billSet
+             ) {
+            System.out.println(e);
+        }
     }
 }
