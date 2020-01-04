@@ -28,11 +28,8 @@ public class Part3 {
         System.out.println(" ");
         System.out.println("Cau 2");
         System.out.println("Input: " + s);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        Date date = sdf.parse(s);
-        Calendar calendar = dateToCalendar(date);
-        calendar.add(Calendar.DAY_OF_YEAR, 100);
-        Date dateAfter100day = calendar.getTime();
+        Date dateAfter100day = getDateAfter100day(s);
+        Calendar calendar = dateToCalendar(dateAfter100day);
         Date dateFirst = new Date();
         Date dateLast = dateAfter100day;
         System.out.println("100 day after: "+ dateAfter100day);
@@ -47,20 +44,7 @@ public class Part3 {
         dateFormat = new SimpleDateFormat("yyyy/MM/dd");
         System.out.println("Ngay dau thang: " + dateFormat.format(dateLast));
 
-        List<Date> dateList = new ArrayList<>();
-        for(int i = 1; i<=30;i++){
-            Date date1 = new Date();
-            date1.setDate(i);
-            date1.setMonth(dateLast.getMonth());
-            date1.setYear(dateLast.getYear());;
-            dateList.add(date1);
-        }
-        List<Date> mondayList = new ArrayList<>();
-        for (Date value : dateList) {
-            if (value.getDay() == 1) {
-                mondayList.add(value);
-            }
-        }
+        List<Date> mondayList = getMondayListInMonth(dateLast);
         System.out.println("Cac ngay dau tuan trong thang");
         for(Date value : mondayList){
             System.out.println(dateFormat.format(value));
@@ -167,5 +151,29 @@ public class Part3 {
         String shortDate = date.substring(0,10);
         String newShortDate = shortDate.replace("-","/");
         return new SimpleDateFormat("yyyy/MM/dd").parse(newShortDate);
+    }
+    public static Date getDateAfter100day(String s) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        Date date = sdf.parse(s);
+        Calendar calendar = dateToCalendar(date);
+        calendar.add(Calendar.DAY_OF_YEAR, 100);
+        return calendar.getTime();
+    }
+    public static List<Date> getMondayListInMonth(Date date){
+        List<Date> dateList = new ArrayList<>();
+        for(int i = 1; i<=date.getDate();i++){
+            Date date1 = new Date();
+            date1.setDate(i);
+            date1.setMonth(date.getMonth());
+            date1.setYear(date.getYear());;
+            dateList.add(date1);
+        }
+        List<Date> mondayList = new ArrayList<>();
+        for (Date value : dateList) {
+            if (value.getDay() == 1) {
+                mondayList.add(value);
+            }
+        }
+        return mondayList;
     }
 }
