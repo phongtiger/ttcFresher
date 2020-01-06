@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -28,26 +29,21 @@ public class Part3 {
         System.out.println(" ");
         System.out.println("Cau 2");
         System.out.println("Input: " + s);
-        Date dateAfter100day = getDateAfter100day(s);
-        Calendar calendar = dateToCalendar(dateAfter100day);
-        Date dateFirst = new Date();
-        Date dateLast = dateAfter100day;
-        System.out.println("100 day after: "+ dateAfter100day);
-        int numberDateLast = calendar.getActualMaximum(Calendar.DATE);
-        dateFirst.setDate(1);
-        dateFirst.setMonth(dateLast.getMonth());
-        dateFirst.setYear(dateLast.getYear());
-        dateLast.setDate(numberDateLast);
-        DateFormat dateFormat = null;
-        dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-        System.out.println("Ngay dau thang: " + dateFormat.format(dateFirst));
-        dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-        System.out.println("Ngay dau thang: " + dateFormat.format(dateLast));
-
-        List<Date> mondayList = getMondayListInMonth(dateLast);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        Date date = sdf.parse(s);
+        Calendar calendar = dateToCalendar(date);
+        calendar.set(Calendar.DAY_OF_YEAR, 100);
+        System.out.println("100 day after: "+ calendar.getTime());
+        calendar.set(Calendar.DAY_OF_MONTH,1);
+        System.out.println(" ");
+        System.out.println("Ngay dau thang " + calendar.getTime());
+        calendar.set(Calendar.DAY_OF_MONTH,calendar.getActualMaximum(Calendar.DATE));
+        System.out.println("Ngay cuoi thang: " + calendar.getTime());
+        System.out.println(" ");
+        List<Date> mondayList = getMondayListInMonth(calendar.getTime());
         System.out.println("Cac ngay dau tuan trong thang");
         for(Date value : mondayList){
-            System.out.println(dateFormat.format(value));
+            System.out.println(value);
         }
 
         //Cau3
@@ -91,15 +87,18 @@ public class Part3 {
         }
         assert d1 != null;
         assert d2 != null;
-        long getDiff = d2.getTime() - d1.getTime();
-        long getDayDiff = TimeUnit.MILLISECONDS.toDays(getDiff);
+        Instant instant1 = Instant.ofEpochMilli(d1.getTime());
+        LocalDate localDate1 = LocalDateTime.ofInstant(instant1, ZoneId.systemDefault()).toLocalDate();
+        Instant instant2 = Instant.ofEpochMilli(d2.getTime());
+        LocalDate localDate2 = LocalDateTime.ofInstant(instant2, ZoneId.systemDefault()).toLocalDate();
+        Period different = Period.between(localDate1,localDate2);
 
-        System.out.println("Khoảng cách giữa 2 ngày nhập là  ~ "
-                + (getDayDiff-getDayDiff/30*30)
+        System.out.println("Khoảng cách giữa 2 ngày nhập là: "
+                + different.getDays()
                 + " ngày , "
-                + getDayDiff/30
+                + different.getMonths()
                 +" tháng và "
-                + getDayDiff/365
+                + different.getYears()
                 + " năm");
 
         //Cau5
@@ -152,13 +151,7 @@ public class Part3 {
         String newShortDate = shortDate.replace("-","/");
         return new SimpleDateFormat("yyyy/MM/dd").parse(newShortDate);
     }
-    public static Date getDateAfter100day(String s) throws ParseException {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        Date date = sdf.parse(s);
-        Calendar calendar = dateToCalendar(date);
-        calendar.add(Calendar.DAY_OF_YEAR, 100);
-        return calendar.getTime();
-    }
+
     public static List<Date> getMondayListInMonth(Date date){
         List<Date> dateList = new ArrayList<>();
         for(int i = 1; i<=date.getDate();i++){

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="sua lan 1">
+    <list default="true" id="6ad0d924-b215-49dd-8ea6-aeb28d71f2b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ttcfresher/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttcfresher/Part1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ttcfresher/Part3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttcfresher/Part3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo">
+  <component name="RunManager" selected="Application.Part3">
     <configuration name="C2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Part2String.C2" />
       <module name="ttcFresher.main" />
@@ -153,7 +153,7 @@
       <updated>1577937837188</updated>
       <workItem from="1577937841041" duration="58011000" />
       <workItem from="1578112627533" duration="17993000" />
-      <workItem from="1578275146261" duration="12802000" />
+      <workItem from="1578275146261" duration="16202000" />
     </task>
     <task id="LOCAL-00001" summary="Success part1">
       <created>1577940411500</created>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578284358881</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="sua lan 2">
+      <created>1578294735244</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578294735244</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +302,8 @@
     <MESSAGE value="refactor3" />
     <MESSAGE value="refactor4" />
     <MESSAGE value="sua lan 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="sua lan 1" />
+    <MESSAGE value="sua lan 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="sua lan 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1204" y="173" width="640" height="693" key="#com.intellij.ide.util.MemberChooser" timestamp="1578131995045">
@@ -310,10 +318,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="630" y="212" width="649" height="615" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.988@0.27.1920.988" timestamp="1578283606949" />
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578292695870">
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2" timestamp="1578294735062">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578292695870" />
+    <state x="431" y="51" width="1048" height="937" key="CommitChangelistDialog2/0.27.1920.988@0.27.1920.988" timestamp="1578294735062" />
     <state x="182" y="109" width="1536" height="820" key="DiffContextDialog" timestamp="1577937980360">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -322,22 +330,22 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state x="693" y="223" width="524" height="594" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1578030694470" />
-    <state width="1864" height="78" key="GridCell.Tab.0.bottom" timestamp="1578294141997">
+    <state width="1864" height="336" key="GridCell.Tab.0.bottom" timestamp="1578298714935">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="78" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1578294141997" />
-    <state width="1864" height="78" key="GridCell.Tab.0.center" timestamp="1578294141995">
+    <state width="1864" height="336" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1578298714935" />
+    <state width="1864" height="336" key="GridCell.Tab.0.center" timestamp="1578298714935">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="78" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1578294141995" />
-    <state width="1864" height="78" key="GridCell.Tab.0.left" timestamp="1578294141994">
+    <state width="1864" height="336" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1578298714935" />
+    <state width="1864" height="336" key="GridCell.Tab.0.left" timestamp="1578298714935">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="78" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1578294141994" />
-    <state width="1864" height="78" key="GridCell.Tab.0.right" timestamp="1578294141996">
+    <state width="1864" height="336" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1578298714935" />
+    <state width="1864" height="336" key="GridCell.Tab.0.right" timestamp="1578298714935">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1864" height="78" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1578294141996" />
+    <state width="1864" height="336" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1578298714935" />
     <state width="1864" height="444" key="GridCell.Tab.1.bottom" timestamp="1578132777093">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
@@ -354,10 +362,10 @@
       <screen x="0" y="27" width="1920" height="988" />
     </state>
     <state width="1864" height="444" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1578132777093" />
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578284361718">
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2" timestamp="1578294737779">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578284361718" />
+    <state x="455" y="193" width="1000" height="654" key="Vcs.Push.Dialog.v2/0.27.1920.988@0.27.1920.988" timestamp="1578294737779" />
     <state x="540" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1578275147586">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
