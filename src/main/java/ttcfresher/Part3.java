@@ -30,8 +30,8 @@ public class Part3 {
         Date date = sdf.parse(s);
         Calendar calendar = dateToCalendar(date);
         SimpleDateFormat dt1 = new SimpleDateFormat("yyyy/MM/dd");
-        calendar.set(Calendar.DAY_OF_WEEK, calendar.getFirstDayOfWeek());
-        calendar.add(Calendar.DATE,1);
+        calendar.set(Calendar.DAY_OF_MONTH, calendar.getFirstDayOfWeek());
+        calendar.add(Calendar.DAY_OF_WEEK,1);
         System.out.println("Ngay dau tuan: "+ dt1.format(calendar.getTime()));
         calendar.set(Calendar.DAY_OF_MONTH,1);
         System.out.println(" ");
