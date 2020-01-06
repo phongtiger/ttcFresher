@@ -109,10 +109,8 @@ public class Bill {
 
         if(obj instanceof Bill){
 
-            return ((Bill) obj).name.equals(this.name);
-
+            return ((Bill) obj).name.equals(this.name)&&(((Bill) obj).id == this.id);
         }
-
         return false;
     }
 }

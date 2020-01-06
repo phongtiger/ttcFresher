@@ -106,10 +106,8 @@ public class Part1 {
             listBillHashMap.put(element, new ArrayList<Bill>());
         }
         for(int i = 0; i< bills.size();i++ ){
-            for(int j = 0; j < listBillHashMap.size();j+=8){
-                if (listBillHashMap.containsKey(bills.get(i).getDate())) {
-                    listBillHashMap.get(bills.get(i).getDate()).add(bills.get(i));
-                }
+            if (listBillHashMap.containsKey(bills.get(i).getDate())) {
+                listBillHashMap.get(bills.get(i).getDate()).add(bills.get(i));
             }
         }
         return listBillHashMap;
