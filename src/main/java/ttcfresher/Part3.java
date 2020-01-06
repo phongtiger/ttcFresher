@@ -13,7 +13,7 @@ public class Part3 {
     public static void main(String[] args) throws ParseException {
         //Cau1
         System.out.println("Cau 1");
-        String s = "2012-12-06 14:20:01";
+        String s = "2012-01-05 14:20:01";
         System.out.println("Input: " + s);
         try {
             Date resultC1 = changeC1(s);
@@ -29,16 +29,15 @@ public class Part3 {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date date = sdf.parse(s);
         Calendar calendar = dateToCalendar(date);
+        calendar.set(Calendar.DAY_OF_WEEK, calendar.getFirstDayOfWeek());
+        calendar.roll(Calendar.DATE,1);
+        System.out.println("Ngay dau tuan: "+ calendar.getTime());
         calendar.set(Calendar.DAY_OF_MONTH,1);
         System.out.println(" ");
         System.out.println("Ngay dau thang " + calendar.getTime());
         calendar.set(Calendar.DAY_OF_MONTH,calendar.getActualMaximum(Calendar.DATE));
         System.out.println("Ngay cuoi thang: " + calendar.getTime());
         System.out.println(" ");
-        Date monday = getMonday(date);
-        calendar.set(Calendar.DAY_OF_WEEK, calendar.getFirstDayOfWeek());
-        calendar.roll(Calendar.DATE,1);
-        System.out.println("Ngay dau tuan: "+ calendar.getTime());
         calendar.set(Calendar.DATE, 100);
         System.out.println("100 ngay sau: " + calendar.getTime());
 
