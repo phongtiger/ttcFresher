@@ -26,20 +26,22 @@ public class Part3 {
         System.out.println(" ");
         System.out.println("Cau 2");
         System.out.println("Input: " + s);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sdf.parse(s);
         Calendar calendar = dateToCalendar(date);
+        SimpleDateFormat dt1 = new SimpleDateFormat("yyyy/MM/dd");
         calendar.set(Calendar.DAY_OF_WEEK, calendar.getFirstDayOfWeek());
-        calendar.roll(Calendar.DATE,1);
-        System.out.println("Ngay dau tuan: "+ calendar.getTime());
+        calendar.add(Calendar.DATE,1);
+        System.out.println("Ngay dau tuan: "+ dt1.format(calendar.getTime()));
         calendar.set(Calendar.DAY_OF_MONTH,1);
         System.out.println(" ");
-        System.out.println("Ngay dau thang " + calendar.getTime());
+        System.out.println("Ngay dau thang " + dt1.format(calendar.getTime()));
         calendar.set(Calendar.DAY_OF_MONTH,calendar.getActualMaximum(Calendar.DATE));
-        System.out.println("Ngay cuoi thang: " + calendar.getTime());
+        System.out.println("Ngay cuoi thang: " + dt1.format(calendar.getTime()));
         System.out.println(" ");
-        calendar.set(Calendar.DATE, 100);
-        System.out.println("100 ngay sau: " + calendar.getTime());
+
+        calendar.add(Calendar.DATE,100);
+        System.out.println("Sau 100 ngay: " + dt1.format(calendar.getTime()));
 
 
         //Cau3
