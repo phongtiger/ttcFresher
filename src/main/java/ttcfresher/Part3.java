@@ -5,18 +5,15 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class Part3 {
 
     public static void main(String[] args) throws ParseException {
         //Cau1
         System.out.println("Cau 1");
-        String s = "2012-03-11 14:20:01";
+        String s = "2012-12-06 14:20:01";
         System.out.println("Input: " + s);
         try {
             Date resultC1 = changeC1(s);
@@ -32,19 +29,19 @@ public class Part3 {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date date = sdf.parse(s);
         Calendar calendar = dateToCalendar(date);
-        calendar.set(Calendar.DAY_OF_YEAR, 100);
-        System.out.println("100 day after: "+ calendar.getTime());
         calendar.set(Calendar.DAY_OF_MONTH,1);
         System.out.println(" ");
         System.out.println("Ngay dau thang " + calendar.getTime());
         calendar.set(Calendar.DAY_OF_MONTH,calendar.getActualMaximum(Calendar.DATE));
         System.out.println("Ngay cuoi thang: " + calendar.getTime());
         System.out.println(" ");
-        List<Date> mondayList = getMondayListInMonth(calendar.getTime());
-        System.out.println("Cac ngay dau tuan trong thang");
-        for(Date value : mondayList){
-            System.out.println(value);
-        }
+        Date monday = getMonday(date);
+        calendar.set(Calendar.DAY_OF_WEEK, calendar.getFirstDayOfWeek());
+        calendar.roll(Calendar.DATE,1);
+        System.out.println("Ngay dau tuan: "+ calendar.getTime());
+        calendar.set(Calendar.DATE, 100);
+        System.out.println("100 ngay sau: " + calendar.getTime());
+
 
         //Cau3
         String a = "2012-03-1";
@@ -152,21 +149,16 @@ public class Part3 {
         return new SimpleDateFormat("yyyy/MM/dd").parse(newShortDate);
     }
 
-    public static List<Date> getMondayListInMonth(Date date){
-        List<Date> dateList = new ArrayList<>();
-        for(int i = 1; i<=date.getDate();i++){
-            Date date1 = new Date();
+    public static Date getMonday(Date date){
+        Date date1 = new Date();
+        for(int i = date.getDate(); i>0;i--){
             date1.setDate(i);
             date1.setMonth(date.getMonth());
             date1.setYear(date.getYear());;
-            dateList.add(date1);
-        }
-        List<Date> mondayList = new ArrayList<>();
-        for (Date value : dateList) {
-            if (value.getDay() == 1) {
-                mondayList.add(value);
+            if(date1.getDay() ==1){
+                 break;
             }
         }
-        return mondayList;
+        return date1;
     }
 }

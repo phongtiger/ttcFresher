@@ -6,7 +6,7 @@ public class Part2 {
     public static void main(String[] args){
         //Cau 1
         System.out.println("Cau 1");
-        String s = "xin chiao the gioi xin the the moi";
+        String s = "in chiao the gioi xin the the moi";
         System.out.println("Input: " + s);
         char k = 'i';
         int n = 6;
@@ -15,10 +15,10 @@ public class Part2 {
         String search = "the";
         int countCharN = getCountCharN(s,k);
         System.out.println(" Số lần xuất hiện của k là: " + countCharN);
-        int positionFirstChar = getPositionFirstChar(s,k);
+        int positionFirstChar = s.indexOf(k)+1;
         System.out.println("Position  char k first: " + positionFirstChar);
 
-        int positionLastChar = getPositionLastChar(s,k);
+        int positionLastChar = s.lastIndexOf(k)+1;
         System.out.println("Position char k last: " + positionLastChar);
 
         int positionByCountN = getPositionByCountN(s,k,n);
@@ -27,10 +27,10 @@ public class Part2 {
         int countStringSearch = getCountString(s,search);
         System.out.println("Số lần xuất hiện của \""+search+ "\" trong " + s+ " là: "+ countStringSearch);
 
-        int positionStringFirst = getPositionStringFirst(s,search);
+        int positionStringFirst = s.indexOf(search)+1;
         System.out.println("Position string search first: " + positionStringFirst);
 
-        int positionStringLast = getPositionStringLast(s,search);
+        int positionStringLast = s.lastIndexOf(search)+1;
         System.out.println("Position string search last: " + positionStringLast);
 
         int positionStringByCountN = getPositionStringByCountN(s,search,n2);
@@ -40,9 +40,8 @@ public class Part2 {
         System.out.println(" ");
         System.out.println("Cau 2");
         String s1 = "adbcda";
-        char[] charsArr = s1.toCharArray();
         System.out.println("Input: " + s1);
-        System.out.println("Danh sach tự xuất hiện nhiều nhất là : " + findListMax(findHashMapCharacter(s1)));
+        System.out.println("Danh sach ky tự xuất hiện nhiều nhất là : " + findListMax(findHashMapCharacter(s1)));
 
         HashMap<String,Integer> stringIntegerHashMap = getChildAndCount(s1);
         System.out.println("String va so lan xuat hien: ");
@@ -61,16 +60,16 @@ public class Part2 {
         listC3.add("s1");
         System.out.println("input:");
         System.out.println(listC3);
-        String outputC3 = subStringList(listC3);
+        String result = String.join(",",listC3);
         System.out.println("output:");
-        System.out.println(outputC3);
+        System.out.println(result);
 
         //cau4
         System.out.println(" ");
         System.out.println("Cau 4");
         System.out.println("input");
-        System.out.println(outputC3);
-        String[] arrC4 = outputC3.split(",");
+        System.out.println(result);
+        String[] arrC4 = result.split(",");
         List<String> listC4 = new ArrayList<>(Arrays.asList(arrC4));
         System.out.println("output");
         System.out.println(listC4);
@@ -81,11 +80,11 @@ public class Part2 {
         String raw = "i am a student am";
         String from = "am";
         String to = "is";
-        String result = replaceString(raw,from,to);
+        String result2 = replaceString(raw,from,to);
         System.out.println("raw: " +raw);
         System.out.println("from: "+from);
         System.out.println("to: "+ to);
-        System.out.println(result);
+        System.out.println(result2);
 
     }
 
@@ -100,18 +99,13 @@ public class Part2 {
         return countInPositionN;
     }
 
-    public static String subStringList(List<String> stringList){
-        StringBuilder sb = new StringBuilder();
-        for (String value : stringList) {
-            sb.append(value).append(",");
-        }
-        return sb.substring(0, sb.length() - 1);
-    }
     public static HashMap<String,Integer> getChildAndCount(String s){
         HashMap<String,Integer> result = new HashMap<>();
         for (int i = s.length(); i >= 0 ; i--) {
             for (int j = 0; j <= i; j++) {
-                result.put(s.substring(j,i),getCountString(s,s.substring(j,i)));
+                if(!result.containsKey(s.substring(j,i))){
+                    result.put(s.substring(j,i),1);
+                } else result.replace(s.substring(j,i),result.get(s.substring(j,i))+1);
             }
         }
         result.remove("");
@@ -120,29 +114,6 @@ public class Part2 {
 
     private static String replaceString(String raw, String from, String to){
         return raw.replace(from, to);
-    }
-    private static int getPositionFirstChar(String s, char k) {
-        int position = 0;
-        char[] s2 = s.toCharArray();
-        for (int i = 0; i<s.length();i++){
-            if(s2[i] == k){
-                position = i+1;
-                break;
-            }
-        }
-        return position;
-    }
-
-    private static int getPositionLastChar(String s, char k){
-        int position = 0;
-        char[] s2 = s.toCharArray();
-        for (int i = s.length()-1; i>=0;i--){
-            if(s2[i] == k){
-                position = i+1;
-                break;
-            }
-        }
-        return position;
     }
 
     public static int getPositionByCountN(String s, char k, int n) {
@@ -156,28 +127,6 @@ public class Part2 {
                     position = i+1;
                     break;
                 }
-            }
-        }
-        return position;
-    }
-
-    private static int getPositionStringFirst(String s, String search){
-        int position = 0;
-        for(int i = 0; i<(s.length()-search.length()+1);i++){
-            if(search.equals(s.substring(i,(i+ search.length())))){
-                position = i+1;
-                break;
-            }
-        }
-        return position;
-    }
-
-    private static int getPositionStringLast(String s, String search){
-        int position = 0;
-        for(int i = s.length()-1; i>0;i--){
-            if(search.equals(s.substring((i- search.length()),i))){
-                position = i-search.length()+1;
-                break;
             }
         }
         return position;
