@@ -47,11 +47,10 @@ public class Part1 {
         System.out.println("Cau 4");
         System.out.println("Input");
         System.out.println(listC4);
-        List<String> dateList = new ArrayList<>();
+        Set<String> setWithoutDuplicateElements = new TreeSet<>();
         for (Bill bill : listC4) {
-            dateList.add(bill.getDate());
+            setWithoutDuplicateElements.add(bill.getDate());
         }
-        Set<String> setWithoutDuplicateElements = new TreeSet<>(dateList);
         System.out.println("Out put");
         for (String element: setWithoutDuplicateElements) {
             System.out.println(element);
@@ -90,37 +89,33 @@ public class Part1 {
             System.out.println(e);
         }
     }
-    public static List<String> getListByDate(List<Bill> bills){
-        List<String> dateList = new ArrayList<>();
-        for (Bill bill : bills) {
-            dateList.add(bill.getDate());
-        }
-        return dateList;
-    }
+
     public static HashMap<String, List<Bill>> getBillDistinctByDate(List<Bill> bills){
-        HashMap<String, List<Bill>> listBillHashMap = new HashMap<>();
-        List<String> dateList2 = getListByDate(bills);
-        Set<String> setWithoutDuplicateElements2 = new TreeSet<>(dateList2);
-        List<String> listWithoutDuplicateElements2 = new ArrayList<>(setWithoutDuplicateElements2);
-        for (String element : listWithoutDuplicateElements2) {
-            listBillHashMap.put(element, new ArrayList<Bill>());
-        }
-        for(int i = 0; i< bills.size();i++ ){
-            if (listBillHashMap.containsKey(bills.get(i).getDate())) {
-                listBillHashMap.get(bills.get(i).getDate()).add(bills.get(i));
+        HashMap<String, List<Bill>> results = new HashMap<>();
+        for (Bill bill : bills) {
+            String date = bill.getDate();
+            if (!results.containsKey(date)) {
+                List<Bill> billList = new ArrayList<>();
+                billList.add(bill);
+                results.put(date, billList);
+            } else {
+                results.get(date).add(bill);
             }
         }
-        return listBillHashMap;
+        return results;
     }
+
     public static List<Bill> sortListByMoney(List<Bill> listBill){
         listBill.sort(Comparator.comparingLong(Bill::getMoney));
         return listBill;
     }
+
     public static void showList(List<Bill> listBill){
         for (Bill bill : listBill) {
             System.out.println(bill.toString() + " , ");
         }
     }
+
     public static List<Bill> getListHaveMoneyMoreThan1000000(List<Bill> bills){
         List<Bill> result = new ArrayList<>();
         for(Bill bill: bills){
@@ -130,6 +125,7 @@ public class Part1 {
         }
         return result;
     }
+
     public static List<Integer> sortList(List<Integer> a){
         a.sort(Integer::compareTo);
         return a;
